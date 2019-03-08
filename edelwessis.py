@@ -20,6 +20,7 @@ for i in (data_main["AGREEMENTID"]):
 filename=r"C:\Users\PIYUSH\Desktop\edel.pkl"
 filename2=r"C:\Users\PIYUSH\Desktop\edel2.pkl"
 test_data.to_pickle(file_name)
-data_main.drop(df.index[ls], inplace=True)
+data_main.drop(data_main.index[ls], inplace=True)
 
 data_main.to_pickle(file_name2)
+print(len(ls))
